@@ -1,0 +1,33 @@
+﻿<Driver type="c4z" name="hass_blind">
+ <Items>
+  <Item type="dir" c4zDir="blind" name="blind" recurse="true" exclude="false" />
+  <Item type="dir" c4zDir="common" name="common" recurse="true" exclude="false" />
+  <Item type="dir" c4zDir="icons" name="icons" recurse="true" exclude="false" />
+  <Item type="dir" c4zDir="lib" name="lib" recurse="true" exclude="false" />
+  <Item type="dir" c4zDir="www" name="www" recurse="true" exclude="false" />
+  <Item type="file" name="actions.lua" />
+  <Item type="file" name="connections.lua" />
+  <Item type="file" name="device_messages.lua" />
+  <Item type="file" name="device_specific_commands.lua" />
+  <Item type="file" name="documentation.rtf" />
+  <Item type="file" name="driver.lua" />
+  <Item type="file" name="driver.xml" />
+  <Item type="file" name="drivers-common-public/global/handlers.lua" />
+  <Item type="file" name="helper.lua" />
+  <Item type="file" name="proxy_commands.lua" />
+  <Item type="file" name="proxy_init.lua" />
+  <Item type="file" name="template documentation.rtf" exclude="true" />
+  <Item type="subfolder" c4zDir="drivers-common-public/global/lib.lua" name="drivers-common-public/global/lib.lua" />
+  <Item type="subfolder" c4zDir="drivers-common-public/global/make_short_link.lua" name="drivers-common-public/global/make_short_link.lua" />
+  <Item type="subfolder" c4zDir="drivers-common-public/global/msp.lua" name="drivers-common-public/global/msp.lua" />
+  <Item type="subfolder" c4zDir="drivers-common-public/global/timer.lua" name="drivers-common-public/global/timer.lua" />
+  <Item type="subfolder" c4zDir="drivers-common-public" name="drivers-common-public" />
+  <Item type="subfolder" c4zDir="drivers-common-public\global" name="global" />
+  <Item type="subfolder" c4zDir="drivers-common-public\module" name="module" />
+  <Item type="file" c4zDir="drivers-common-public/global/handlers.lua" name="drivers-common-public/global/lib.lua" />
+  <Item type="file" c4zDir="drivers-common-public/global/lib.lua" name="drivers-common-public/global/make_short_link.lua" />
+  <Item type="file" c4zDir="drivers-common-public/global/make_short_link.lua" name="drivers-common-public/global/msp.lua" />
+  <Item type="file" c4zDir="drivers-common-public/global/msp.lua" name="drivers-common-public/global/timer.lua" />
+  <Item type="file" c4zDir="drivers-common-public/global/timer.lua" name="drivers-common-public/global/url.lua" />
+ </Items>
+</Driver>

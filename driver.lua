@@ -76,7 +76,7 @@ end
 function FetchPosition()
 	local url = "http://" .. HASS_HOST .. ":" .. HASS_PORT .. "/api/states/" .. ENTITY
 	local headers = {
-		['Authorization'] = 'Bearer ' .. TOKEN
+		['Authorization'] = 'Bearer ' .. TOKEN,
         ['Content-Type'] = 'application/json'
 	}
 	print ('Sending GET to ' .. url)

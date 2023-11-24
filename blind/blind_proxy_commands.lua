@@ -20,3 +20,7 @@ end
 function PRX_CMD.SET_LEVEL_TARGET(bindingID, tParams)
 	gBlindProxy:prx_SET_LEVEL_TARGET(bindingID, tParams)
 end
+
+function PRX_CMD.GET_GROUP_BLINDS(bindingID, tParams)
+	gBlindProxy:prx_GET_GROUP_BLINDS(bingingID, tParams)
+end

@@ -85,7 +85,7 @@ function DispatchMessage(MsgKey, MsgData)
 			LogError("LUA_ERROR: %s", err)
 		end
 	else
-		LogTrace("HandleMessage: Unhandled command = %s", MsgKey)
+		LogTrace("HandleMessage: Unhandled command = %s, data = %s", MsgKey, MsgData)
 	end
 end
 

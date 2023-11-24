@@ -25,9 +25,16 @@ function STOP(bindingID)
     LogTrace("STOP")
 
     -- TODO:
-    -- build the command using the function parameters and send it to the device here
-    local command = ""
+    -- build the command using the function parameters and send it to the device here        
+	local url = "http://" .. HASS_HOST .. ":" .. HASS_PORT .."/api/services/cover/stop_cover"
+	local headers = {
+		['Authorization'] = 'Bearer ' .. TOKEN,
+        ['Content-Type'] = 'application/json'
+	}
 
+    local data = '{"entity_id": "' .. ENTITY .. '"}'
+	print ('Sending POST to ' .. url)
+	urlPost(url, data, headers)
     -- PackAndQueueCommand("STOP", command)
 end
 
@@ -73,7 +80,7 @@ function SET_LEVEL_TARGET(bindingID, level_target)
     
 	local url = "http://" .. HASS_HOST .. ":" .. HASS_PORT .."/api/services/cover/set_cover_position"
 	local headers = {
-		['Authorization'] = 'Bearer ' .. TOKEN
+		['Authorization'] = 'Bearer ' .. TOKEN,
         ['Content-Type'] = 'application/json'
 	}
 
@@ -88,6 +95,12 @@ function SET_LEVEL_TARGET(bindingID, level_target)
     --PackAndQueueCommand("SET_LEVEL_TARGET", command)
 end
 
+function GET_GROUP_BLINDS()
+
+    print("GET_GROUP_BLINDS, all the way in AIJAY CODE")
+    return 5001
+
+end
 --=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 -- Initialization function called from 
 -- OnNetworkStatusChanged() / OnSerialConnectionChanged()

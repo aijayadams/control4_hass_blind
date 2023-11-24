@@ -43,6 +43,13 @@ function BlindProxy:prx_LEVEL_TOGGLE(bindingID)
 	LEVEL_TOGGLE(bindingID)
 end
 
+
+function BlindProxy:prx_GET_GROUP_BLINDS(bindingID)
+	LogTrace("BlindProxy:prx_GET_GROUP_BLINDS")
+	GET_GROUP_BLINDS(bindingID)
+end
+
+
 function BlindProxy:prx_SET_LEVEL_TARGET(bindingID, tParams)
 	LogTrace("BlindProxy:prx_SET_LEVEL_TARGET")
 	local level_target = tonumber(tParams["LEVEL_TARGET"])

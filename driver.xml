@@ -7,7 +7,7 @@
   <model>Hass Blind</model>
   <created>06/27/2016 5:06 PM</created>
   <modified>08/02/2017 6:04 PM</modified>
-  <version>101</version>
+  <version>104</version>
   <small>devices_sm\blind.gif</small>
   <large>devices_lg\blind.gif</large>
   <control>lua_gen</control>
@@ -20,13 +20,12 @@
     <can_stop>True</can_stop>
     <driver_handles_toggle>false</driver_handles_toggle>
     <has_level>true</has_level>
-    <level_closed>5</level_closed>
+    <level_closed>0</level_closed>
     <level_open>100</level_open>
     <level_unknown>-9999</level_unknown>
     <level_discrete_control>True</level_discrete_control>
-    <level_closed_secondary>0</level_closed_secondary>
-    <movement>0</movement>
-    <type>2</type>
+    <movement>2</movement>
+    <type>0</type>
   </capabilities>
   <connections>
     <connection>
